@@ -1,0 +1,25 @@
+1. Clone Repository
+2. Buat Virtual Environtment
+3. Install Requirements
+	pip install -r requirements.txt
+4. Run API
+   - flask run
+   - Use the URL Address (example: 127.0.0.1:5000/) and use it on Postman
+
+PENJELASAN ENDPOINT 
+
+Author Route : api/authors/category/<string:category_name> [GET] : untuk menampilkan author berdasarkan kategori
+	      api/authors/<int:author_id> [DELETE] : untuk menghapus row dalam tabel author berdasarkan Author_ID
+Book Route : /api/books [GET] : untuk menampilkan data buku
+	     /api/books [POST] : untuk menambah row data buku
+	     /api/books/<int:book_id> [PATCH] : untuk mengganti atribut tertentu dalam satu row tabel
+	     /api/books/<int:book_id> [DELETE] : untuk menghapus row dalam tabel book berdasarkan Book_ID
+
+Reviews Route : /api/reviews [GET] : untuk menampilkan data reviews
+		/api/reviews [POST] : untuk menambahkan row reviews
+	
+Wishlist Route : /api/wishlist/<int:customer_id> [GET] : menampilkan wishlist berdasarkan Wishlist_ID
+		 /api/wishlist	[POST] : menambahkan satu row dalam tabel Wishlist
+		 /api/wishlist/<int:wishlist_id> [DELETE] : untuk menghapus row dalam tabel wishlist berdasarkan 								Wishlist_ID
+
+https://youtu.be/hD7txwzInEY
